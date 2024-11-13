@@ -60,6 +60,10 @@ app.get('/home', (req, res)=>{
     res.send(nigerianFoods)
 })
 
+app.get("/",(req, res)=>{
+    res.send("Welcome to my website")
+})
+
 app.post("/submit", (req, res)=>{
     console.log(req.body);
     const form = new userModel(req.body,)
